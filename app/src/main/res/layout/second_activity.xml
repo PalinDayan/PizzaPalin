@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backpizza"
+    android:orientation="vertical" >
+
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linerari">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/Hello"
+        android:textSize="35dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="35dp"
+        android:id="@+id/username_output"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size_pizza"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:layout_marginTop="30dp"
+        android:id="@+id/groupradio"
+        android:layout_marginStart="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id1"
+            android:text="@string/small"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id2"
+            android:text="@string/medium"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id3"
+            android:text="@string/large"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/newpizza"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/toping1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tomatos"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/toping2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/greenolive"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/toping3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mashrum"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/toping4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/onion"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/toping5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/peperoni2"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/toping6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pepper"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/toping7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blackolive"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:scaleType="fitXY" />
+</RelativeLayout>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toping"
+        android:id="@+id/addTop"
+        android:visibility="gone"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTop"
+        android:layout_marginTop="40dp"
+        android:id="@+id/horizons"
+        android:fadeScrollbars="false"
+        android:visibility="gone">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tableR">
+            <CheckBox android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tomato"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="20dp"/>
+            <CheckBox android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/greenolive1"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="20dp"/>
+            <CheckBox android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mashrome1"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="20dp"/>
+            <CheckBox android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/onion1"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="20dp"/>
+            <CheckBox android:id="@+id/checkbox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/peperon1"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="20dp"/>
+            <CheckBox android:id="@+id/checkbox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pepper1"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="20dp"/>
+            <CheckBox android:id="@+id/checkbox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/blackolive1"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="20dp"/>
+
+        </TableRow>
+    </HorizontalScrollView>
+
+    <CheckBox
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addDrink"
+        android:id="@+id/addDrink"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/drinkText_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:visibility="gone">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NumDrinkText"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/drinkText"/>
+
+    <EditText
+        android:id="@+id/input_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/NumDrink_input"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@+id/drinkText"
+        android:layout_alignBaseline="@+id/drinkText"
+        android:textSize="15dp"
+        android:inputType="number" />
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_drink"
+            android:text="@string/Select"
+            android:background="@drawable/btn_selector"
+            android:textColor="@color/white"
+            android:id="@+id/choseDrink"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/drinkSpineer"
+        android:orientation="vertical"/>
+    
+    <LinearLayout
+        android:id="@+id/buttonEnd"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_marginBottom="30dp">
+    <Button
+        android:id="@+id/finishOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finishOrder"
+        android:background="@drawable/btn_selector"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Reset"
+        android:layout_marginStart="130dp"
+        android:background="@drawable/btn_selector"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

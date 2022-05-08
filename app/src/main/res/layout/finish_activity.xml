@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backpizza"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/FinishTitel"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thankText"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp" />
+
+<RelativeLayout
+android:id="@+id/edittext_layout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="20dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/toAddress"
+    android:textSize="20dp"
+    android:layout_marginTop="30dp"
+    android:id="@+id/textAddress"/>
+
+<TextView
+    android:id="@+id/input_address"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:textSize="20dp"
+    android:layout_toEndOf="@+id/textAddress"
+    android:layout_alignBaseline="@+id/textAddress"/>
+
+<TextView
+    android:layout_below="@+id/textAddress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/toCity"
+    android:textSize="20dp"
+    android:layout_marginTop="30dp"
+    android:id="@+id/cityText"/>
+<TextView
+    android:id="@+id/input_city"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:textSize="20dp"
+    android:layout_toEndOf="@+id/cityText"
+    android:layout_alignBaseline="@+id/cityText" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/finishLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buyPizza"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/buyPizza"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/with"
+            android:textSize="0dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/withTop"
+            android:layout_toEndOf="@+id/buyPizza"
+            android:layout_alignBaseline="@+id/buyPizza" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noToping"
+            android:textSize="0dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/withOut"
+            android:layout_toEndOf="@+id/withTop"
+            android:layout_alignBaseline="@+id/buyPizza"/>
+
+        <TextView
+            android:id="@+id/inputeoping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_toEndOf="@+id/withOut"
+            android:layout_alignBaseline="@+id/buyPizza"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/topinigText"
+            android:textSize="0dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/toping"
+            android:layout_toEndOf="@+id/inputeoping"
+            android:layout_alignBaseline="@+id/buyPizza" />
+
+        <TextView
+            android:layout_below="@+id/buyPizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="0dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/buyBottles"
+            android:id="@+id/buyBottel"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noBottels"
+            android:textSize="0dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/withOutBott"
+            android:layout_toEndOf="@+id/buyBottel"
+            android:layout_alignBaseline="@+id/buyBottel"/>
+
+        <TextView
+            android:id="@+id/inputBottels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_toEndOf="@+id/withOutBott"
+            android:layout_alignBaseline="@+id/buyBottel"/>
+        <TextView
+            android:id="@+id/bottel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="0dp"
+            android:text="@string/bottelsText"
+            android:layout_toEndOf="@+id/inputBottels"
+            android:layout_alignBaseline="@+id/buyBottel"/>
+
+        <TextView
+            android:layout_below="@+id/buyBottel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/cost"
+            android:id="@+id/costText"/>
+        <TextView
+            android:id="@+id/inputCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:layout_toEndOf="@+id/costText"
+            android:layout_alignBaseline="@+id/costText"/>
+        <TextView
+            android:id="@+id/nis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:text="@string/nis"
+            android:layout_toEndOf="@+id/inputCost"
+            android:layout_alignBaseline="@+id/costText"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comeSoon"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+
+</LinearLayout>
